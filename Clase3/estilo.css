@@ -1,0 +1,47 @@
+/*
+selector{
+    propiedades
+}
+.class {}
+#id{}
+prioridad id - class
+*/
+body{
+    background-image: url('./imagenes/403408.jpg');;
+}
+
+.fondoVerde{
+    background-color: green;
+}
+
+.bordeAzul{
+    /* border-color: blue;
+    border-width: 2px;
+    border-style: dotted; */
+    border: blue 2px dotted;
+}
+
+.texto3{
+    background-color: white;
+    width: 50%;
+}
+
+.img1{
+    width: 800px;
+    height: 500px;
+}
+
+button{
+    background-color: blue;
+    /* display: block;     */
+}
+
+#tituloPrincipal{
+    background-color: #e48a4e;
+    /* width: 400px; */
+    display: inline;
+}
+
+#textoUnico{
+    background-color: white;
+}
