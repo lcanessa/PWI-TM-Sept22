@@ -1,0 +1,46 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+:root{
+    --colorVioleta: #d493d4;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.inputComp{
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+textarea{
+    border-radius: 10px;
+    height: 100px;
+    background-color: var(--colorVioleta);
+}
+
+h1:hover{
+    color: green;
+}
+
+.inputComp:active{
+    background-color: chocolate;
+}
+
+h1:active + button{
+    display: block;
+}
+button{
+    display: none;
+}
+
+input:invalid{
+    border: 2px solid red;
+}
