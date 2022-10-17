@@ -6,9 +6,6 @@ body{
     background-color: lightblue;
 }
 
-.card{
-    /* width: 18rem; */
-}
 
 .btn-success{
     background-color: var(--colorBtn);
