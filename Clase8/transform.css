@@ -1,0 +1,45 @@
+*{
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+body{
+    background-color: lightblue;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.cubo{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    border: 3px solid darkred;
+    transition: all 3s;
+}
+
+
+.uno:hover{
+    transform: translate(-20px,100px);
+    background-color: yellow;
+    transition: all 5s; /* transition permite que los cambios en el elemnto se hagan de forma pregresiva, puedo anotar la propiedad y con u nespacio el tiempo en que lo va a realizar en segundos. Si quiero que todas las propiedades se modifiquen de forma progresiva puedo utlizar la variante all en vez de la propiedad a transitar */
+}
+
+.dos:active{
+    /* escala al elemento, utiliza numeros sin unidad */
+    transform: scale(1,2);
+}
+
+.tres:hover{
+    transform: rotate(360deg); /*en degree*/
+}
+
+.cuatro:active{
+    transform: skew(20deg);
+}

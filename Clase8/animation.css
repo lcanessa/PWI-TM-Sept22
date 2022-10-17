@@ -1,0 +1,26 @@
+.fondo{
+    width: 300px;
+    border: 2px solid blueviolet;
+}
+
+img{
+    width: 100%;
+}
+h1{
+    color: red;
+    /*nombre, cuanto dura y cuantas veces se reproduce*/
+    animation: colores 5s infinite;
+}
+
+/*definir la animacion*/
+@keyframes colores{
+    0%{
+        color: green;
+    }
+    50%{
+        color: blue;
+    }
+    100%{
+        color:pink;
+    }
+}
