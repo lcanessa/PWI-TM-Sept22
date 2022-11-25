@@ -1,0 +1,145 @@
+/* --  globales y generales ---*/
+:root{
+    --colorBlue:#5F9DF7;
+    --colorWhite:#F5F5F5;
+    --colorBlack:#000000;
+    --colordarkGrey:#5A5A5A;
+    --colorLightGrey:#F8F9Fa;
+    --colorMediumGray:#d5d5d5;
+}
+
+.fontWhite{
+    color: var( --colorWhite);
+}
+
+.fontBlack{
+    color: var(--colorBlack);
+}
+
+.fontBLue{
+    color: var(--colorBlue);
+}
+
+.backgroundGrey{
+    background-color: var(--colorLightGrey);
+}
+
+.backgroundBlue{
+    background-color: var(--colorBlue);
+}
+
+
+.body{
+    background-color: beige;
+}
+
+
+
+/* ------ Navegador ------ */
+
+#navMenu{
+    position: fixed;
+}
+
+
+/* ------ Section Home ------ */
+
+header{
+    background-image: url('./archivos/game-of-thrones-kings-landing.jpeg');
+    background-size: contain;
+    background-repeat: round;
+    background-position: center;
+    height: 65vh;
+}
+
+.viewWorkBtn{ 
+    background-color: var(--colorBlack);
+    color: var( --colorWhite);
+}
+
+.headerText{
+    text-align: center;
+    padding: 100px;    
+    /* background-image: url('./archivos/Portada-2.jpg'); */
+}
+.mask{
+    background-color: rgba(0, 0, 0, 0.295);
+}
+
+/*------ Section Main------*/
+.card{
+    position: inherit;
+}
+
+.imgLogos{
+    background-size: contain;
+    margin: 60px;
+    
+}
+.tituloCasa{
+    background-color: var(--colorBlue);
+    width: fit-content;
+    font-size: large;
+}
+
+.textName{
+    border-bottom:2px solid var(--colorBlue);
+
+}
+
+th{
+    color: var(--colordarkGrey);
+}
+
+
+/* ------ main------ */
+
+
+section{
+    padding: 80px 160px;
+}
+
+
+/*------ seccion skills------*/
+
+
+.gritTemplate{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 70%;
+    gap: 40px;
+}
+.iconSkill{
+    font-size: 60px;
+    color: var(--colorBlue);
+}
+
+.cardResume{
+    border-left: 4px solid var(--colorBlue);
+    padding: 12px 5px 0px;
+
+}
+
+.textResume{
+    border-bottom: 1px solid var(--colorMediumGray);
+    margin: 0;
+    padding-bottom:12px ;
+    color: var();
+}
+
+
+/*------ seccion Contact------*/
+
+
+.form-control{
+    border: none;
+    border-radius: 0px;
+    border-bottom:1px solid var(--colorWhite);
+    height: 20px;
+    width: 90%;
+    margin-bottom: 1rem;
+    background-color: var(--Color-Base);
+}
+.form-control::placeholder{
+    color: var(--colorMediumGray);
+}
