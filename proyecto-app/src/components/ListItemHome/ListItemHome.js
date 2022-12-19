@@ -1,3 +1,5 @@
+//importar css para darle estilo al <li>
+import './ListItemHome.css' 
 
 export default function ListItemHome({dato, otraData}){
     const mostrar = () => {
