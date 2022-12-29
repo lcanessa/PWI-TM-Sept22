@@ -1,16 +1,13 @@
-//importar css para darle estilo al <li>
-import './ListItemHome.css' 
+import {Link} from "react-router-dom";
+import "./ListItemHome.css"
 
-export default function ListItemHome({dato, otraData}){
-    const mostrar = () => {
-        console.log(otraData)
-    }
+export default function ListItemHome ({dato,infoPath}){
+  
+
 
     return(
-        <li onClick={mostrar}>{dato}</li>
-    )    
-}
-
-//onMouseOver
-//onChange
-//onClick
+        <li  className="nav-item" >
+            <Link to={infoPath} className="nav-link active m-2 p-3 botones">{dato}</Link>
+        </li>
+    )
+} 

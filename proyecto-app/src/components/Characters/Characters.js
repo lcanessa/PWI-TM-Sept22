@@ -2,6 +2,7 @@ import Navegation from "../Navegation/Navegation"
 import Filters from "../Filters/Filters"
 import SectionCards from "../SectionCards/SectionCards"
 import {useState, useEffect} from 'react';
+import { Fragment } from "react";
 
 export default function Characters(props){
 
@@ -51,17 +52,21 @@ export default function Characters(props){
     }, [])
 
     return(
-        <div>
+        // El fragment reemplaza al div
+        <Fragment>
             <Navegation />
+            
             <section className="bg-success d-flex p-2">
+                <h2>Filters</h2>
                 <Filters nombreFiltro="Character Alive" datoFiltro="Alive" muestraValor={mostrarValor}/>
                 <Filters nombreFiltro="Character Dead" datoFiltro="Dead" muestraValor={mostrarValor} />
                 <Filters nombreFiltro="Female" datoFiltro="Female" muestraValor={mostrarValor}/>
                 <Filters nombreFiltro="Male" datoFiltro="Male" muestraValor={mostrarValor}/>
                 <Filters nombreFiltro="Origin Unknown" datoFiltro="unknown" muestraValor={mostrarValor}/>
             </section>
+
             <SectionCards datos={datos} />
             
-        </div>
+        </Fragment>
     )
 }

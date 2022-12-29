@@ -1,0 +1,12 @@
+ul{
+    list-style-type: none;
+}
+header{
+    padding: 20px;
+}
+
+.bg-blue {
+    background-color: #344d67;
+    position: fixed;
+    top: 0%;
+}
