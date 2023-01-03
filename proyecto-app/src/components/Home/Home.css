@@ -12,3 +12,10 @@ h1, nav {
     padding: 40px!important;
     color: #344D67;
 }
+
+.botones:hover, .boton:hover, .btn-active{
+    background-color: #6ECCAF !important;
+    color: #344D67!important;
+    width: fit-content;
+    
+}

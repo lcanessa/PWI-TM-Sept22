@@ -3,6 +3,7 @@ import Filters from "../Filters/Filters"
 import SectionCards from "../SectionCards/SectionCards"
 import {useState, useEffect} from 'react';
 import { Fragment } from "react";
+import './Characters.css';
 
 export default function Characters(props){
 
@@ -55,8 +56,8 @@ export default function Characters(props){
         // El fragment reemplaza al div
         <Fragment>
             <Navegation />
-            
-            <section className="bg-success d-flex p-2">
+            <main className="container">
+            <section className="row section-filters py-5">
                 <h2>Filters</h2>
                 <Filters nombreFiltro="Character Alive" datoFiltro="Alive" muestraValor={mostrarValor}/>
                 <Filters nombreFiltro="Character Dead" datoFiltro="Dead" muestraValor={mostrarValor} />
@@ -66,7 +67,7 @@ export default function Characters(props){
             </section>
 
             <SectionCards datos={datos} />
-            
+            </main>
         </Fragment>
     )
 }

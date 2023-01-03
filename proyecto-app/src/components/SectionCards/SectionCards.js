@@ -4,7 +4,7 @@ import './SectionCards.css'
 export default function SectionCards({datos}){
 
     return(
-        <section className="section-cards">            
+        <section className="row section-cards">            
             {datos.map((dato)=>{
                    return <Card key={dato.id} info={dato}/>
                 })}            
