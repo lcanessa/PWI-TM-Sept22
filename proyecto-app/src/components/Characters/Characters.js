@@ -59,11 +59,13 @@ export default function Characters(props){
             <main className="container">
             <section className="row section-filters py-5">
                 <h2>Filters</h2>
-                <Filters nombreFiltro="Character Alive" datoFiltro="Alive" muestraValor={mostrarValor}/>
-                <Filters nombreFiltro="Character Dead" datoFiltro="Dead" muestraValor={mostrarValor} />
-                <Filters nombreFiltro="Female" datoFiltro="Female" muestraValor={mostrarValor}/>
-                <Filters nombreFiltro="Male" datoFiltro="Male" muestraValor={mostrarValor}/>
-                <Filters nombreFiltro="Origin Unknown" datoFiltro="unknown" muestraValor={mostrarValor}/>
+                <div className="d-flex justify-content-between flex-wrap">
+                    <Filters nombreFiltro="Character Alive" datoFiltro="Alive" muestraValor={mostrarValor}/>
+                    <Filters nombreFiltro="Character Dead" datoFiltro="Dead" muestraValor={mostrarValor} />
+                    <Filters nombreFiltro="Female" datoFiltro="Female" muestraValor={mostrarValor}/>
+                    <Filters nombreFiltro="Male" datoFiltro="Male" muestraValor={mostrarValor}/>
+                    <Filters nombreFiltro="Origin Unknown" datoFiltro="unknown" muestraValor={mostrarValor}/>
+                </div>
             </section>
 
             <SectionCards datos={datos} />
